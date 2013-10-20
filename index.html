@@ -9,10 +9,10 @@
  
     <title>Hiopensource.github.io</title>
         <script> 
-   var host = window.location.host;
-   if(!(/^www/.test(host))){
-   window.location.href = "www."+window.location.href;
-   }
+  var host = window.location.host;
+  if(!(/^www/.test(host))){
+  window.location.href = window.location.href.replace(/http:\/\//,"http:\/\/www.");
+  }
     </script>
   </head>
 
